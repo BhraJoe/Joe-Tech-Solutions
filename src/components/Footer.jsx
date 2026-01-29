@@ -11,8 +11,8 @@ const Footer = () => {
             <div className="container footer-container">
                 <div className="footer-brand">
                     <Link to="/" className="footer-logo">
-                        <Code2 className="logo-icon" size={24} />
-                        <span>JoeTech<span className="highlight">Solutions</span></span>
+                        <img src="/src/assets/logo.png" alt="Joe Tech Solutions" className="logo-image" />
+                        <span className="logo-text">JoeTech<span className="highlight">Solutions</span></span>
                     </Link>
                     <p className="footer-desc">
                         Creating robust, scalable, and premium digital solutions for modern businesses.

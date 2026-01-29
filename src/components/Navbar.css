@@ -33,8 +33,19 @@
     color: var(--text-primary);
 }
 
-.logo-icon {
-    color: var(--accent-primary);
+.logo-image {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Removed .logo-icon since it's replaced */
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
 }
 
 .highlight {

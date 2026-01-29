@@ -35,7 +35,7 @@
   /* Spacing */
   --container-width: 1280px;
   /* Slightly wider for modern feel */
-  --header-height: 80px;
+  --header-height: 110px;
 
   /* Animations */
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
