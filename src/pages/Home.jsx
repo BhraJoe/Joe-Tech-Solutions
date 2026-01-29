@@ -76,22 +76,7 @@ const Home = () => {
                         </motion.div>
                     </motion.div>
 
-                    <motion.div
-                        className="hero-visual"
-                        initial={{ opacity: 0, x: 50 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 1, delay: 0.2 }}
-                    >
-                        {/* Floating Composition */}
-                        <div className="floating-card card-1">
-                            {/* We use the fintech project image as a preview */}
-                            <img src="/src/assets/project-fintech.png" alt="Fintech Dashboard UI" />
-                        </div>
-                        <div className="floating-card card-2">
-                            <img src="/src/assets/project-banking.png" alt="Banking Portal UI" />
-                        </div>
-                        <div className="visual-glow"></div>
-                    </motion.div>
+
 
                     <motion.div
                         className="scroll-indicator"

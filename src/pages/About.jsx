@@ -19,37 +19,19 @@ const About = () => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
         >
-            <section className="page-hero">
-                <div className="container">
-                    <motion.h1
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                    >
-                        About <span className="text-gradient">Joe</span>
-                    </motion.h1>
-                    <motion.p
-                        className="page-subtitle"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.1 }}
-                    >
-                        Software Engineer. Creative Problem Solver. Tech Strategist.
-                    </motion.p>
-                </div>
-            </section>
-
-            <section className="section about-content-section">
+            {/* UNIFIED HERO SECTION (Background Image Mode) */}
+            <section className="about-hero-section">
                 <div className="container about-container">
-                    <div className="about-grid">
-                        <motion.div
-                            className="about-bio"
-                            initial={{ opacity: 0, x: -30 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.6 }}
-                        >
-                            <h2>The Person Behind the Code</h2>
+                    <motion.div
+                        className="about-content-centered"
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                    >
+                        <h1>About <span className="text-gradient">Joe</span></h1>
+                        <p className="hero-tagline">Software Engineer. Creative Problem Solver. Tech Strategist.</p>
+
+                        <div className="about-bio-text">
                             <p>
                                 I'm Joe, a passionate Software Engineer based in Ghana with a global mindset.
                                 I founded JoeTech Solutions with a singular mission: to bridge the gap between complex technology
@@ -60,36 +42,24 @@ const About = () => {
                                 Whether it's a high-performance marketing site or a complex web application, I bring
                                 engineering rigor and creative flair to every project.
                             </p>
-
-                            <div className="about-stats-row">
-                                <div className="stat">
-                                    <span className="stat-num">5+</span>
-                                    <span className="stat-label">Years Exp.</span>
-                                </div>
-                                <div className="stat">
-                                    <span className="stat-num">100%</span>
-                                    <span className="stat-label">Client Satisfaction</span>
-                                </div>
-                            </div>
-
-                            <div className="signature">
-                                <p>- Joe</p>
-                            </div>
-                        </motion.div>
-
-                        <div className="about-image-wrapper">
-                            <motion.div
-                                className="image-frame"
-                                initial={{ opacity: 0, scale: 0.9 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.6, delay: 0.2 }}
-                            >
-                                <img src="/src/assets/about-me.png" alt="Joe's Workspace" className="about-image" />
-                                <div className="image-glow"></div>
-                            </motion.div>
                         </div>
-                    </div>
+
+                        <div className="about-stats-row">
+                            <div className="stat">
+                                <span className="stat-num">5+</span>
+                                <span className="stat-label">Years Exp.</span>
+                            </div>
+                            <div className="stat-divider-vertical"></div>
+                            <div className="stat">
+                                <span className="stat-num">100%</span>
+                                <span className="stat-label">Client Satisfaction</span>
+                            </div>
+                        </div>
+
+                        <div className="signature">
+                            <p>- Joe</p>
+                        </div>
+                    </motion.div>
                 </div>
             </section>
 

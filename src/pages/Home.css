@@ -23,12 +23,12 @@
 /* Hero Section */
 .hero-section {
     padding: 8rem 0 6rem;
-    /* Reduced top padding slightly */
     min-height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
-    background: linear-gradient(rgba(2, 6, 23, 0.7), rgba(2, 6, 23, 0.8)), url('../assets/hero-bg.png');
+    /* New Background Image Setup */
+    background: linear-gradient(rgba(2, 6, 23, 0.85), rgba(2, 6, 23, 0.9)), url('../assets/project-fintech.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -36,18 +36,25 @@
 }
 
 .hero-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+    gap: 4rem;
     position: relative;
     z-index: 2;
+    max-width: 900px;
+    /* Limit width for readability */
+    margin: 0 auto;
 }
 
 .hero-content {
-    text-align: left;
-    max-width: 100%;
-    margin: 0;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-badge {
@@ -83,12 +90,12 @@
 
 .hero-cta {
     display: flex;
-    gap: 1rem;
-    justify-content: flex-start;
+    gap: 1.5rem;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* Prevent breaking on small screens */
     margin-bottom: 3rem;
+    width: 100%;
 }
 
 .btn-lg {
@@ -114,9 +121,11 @@
 .hero-stats {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    justify-content: center;
+    gap: 3rem;
     padding-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
 }
 
 .stat-item {
