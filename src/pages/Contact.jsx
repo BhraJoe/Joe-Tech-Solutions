@@ -32,18 +32,20 @@ const Contact = () => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
         >
-            <section className="page-hero">
+            <section className="contact-hero-section">
                 <div className="container">
-                    <motion.h1
-                        initial={{ opacity: 0, y: 20 }}
+                    <motion.div
+                        className="hero-content-centered"
+                        initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
+                        transition={{ duration: 0.8 }}
                     >
-                        Get in <span className="text-gradient">Touch</span>
-                    </motion.h1>
-                    <p className="page-subtitle">
-                        Ready to start your next project? Let's talk.
-                    </p>
+                        <h1>Let's <span className="text-gradient">Talk</span></h1>
+                        <p className="hero-tagline">Start Your Transformation</p>
+                        <p className="hero-description">
+                            Ready to build something extraordinary? I'm currently accepting new projects.
+                        </p>
+                    </motion.div>
                 </div>
             </section>
 

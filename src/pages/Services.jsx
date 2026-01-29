@@ -41,45 +41,45 @@ const Services = () => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
         >
-            <section className="page-hero">
+            <section className="services-hero-section">
                 <div className="container">
-                    <motion.h1
-                        initial={{ opacity: 0, y: 20 }}
+                    <motion.div
+                        className="hero-content-centered"
+                        initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
+                        transition={{ duration: 0.8 }}
                     >
-                        My <span className="text-gradient">Services</span>
-                    </motion.h1>
-                    <p className="page-subtitle">
-                        Comprehensive technical solutions for forward-thinking businesses.
-                    </p>
+                        <h1>My <span className="text-gradient">Services</span></h1>
+                        <p className="hero-tagline">Comprehensive Technical Solutions</p>
+                        <p className="hero-description">
+                            Engineering forward-thinking digital experiences that drive business growth.
+                        </p>
+                    </motion.div>
                 </div>
             </section>
 
             <section className="section services-list-section">
                 <div className="container">
-                    <div className="services-detailed-grid">
+                    <div className="services-grid">
                         {services.map((service, index) => (
                             <motion.div
                                 key={index}
-                                className="service-detail-card"
+                                className="service-card"
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 }}
                             >
-                                <div className="service-icon-lg">
-                                    <service.icon size={40} />
+                                <div className="service-icon-wrapper">
+                                    <service.icon size={32} />
                                 </div>
-                                <div className="service-content">
-                                    <h3>{service.title}</h3>
-                                    <p>{service.description}</p>
-                                    <ul className="service-features">
-                                        {service.features.map(feature => (
-                                            <li key={feature}>{feature}</li>
-                                        ))}
-                                    </ul>
-                                </div>
+                                <h3>{service.title}</h3>
+                                <p>{service.description}</p>
+                                <ul className="service-feature-list">
+                                    {service.features.map(feature => (
+                                        <li key={feature}>{feature}</li>
+                                    ))}
+                                </ul>
                             </motion.div>
                         ))}
                     </div>

@@ -71,18 +71,20 @@ const Portfolio = () => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
         >
-            <section className="page-hero">
+            <section className="portfolio-hero-section">
                 <div className="container">
-                    <motion.h1
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
+                    <motion.div
+                        className="hero-content-centered"
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.8 }}
                     >
-                        Selected <span className="text-gradient">Works</span>
-                    </motion.h1>
-                    <p className="page-subtitle">
-                        A collection of projects tailored to business needs.
-                    </p>
+                        <h1>Selected <span className="text-gradient">Works</span></h1>
+                        <p className="hero-tagline">Innovation in every pixel</p>
+                        <p className="hero-description">
+                            A curated selection of projects that demonstrate my ability to solve complex problems with elegant code.
+                        </p>
+                    </motion.div>
                 </div>
             </section>
 
