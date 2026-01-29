@@ -187,16 +187,32 @@
         grid-template-columns: 1fr;
         gap: 1.5rem;
         padding: 2rem;
+        text-align: center;
     }
 
     .service-icon-lg {
-        width: 60px;
-        height: 60px;
-        margin-bottom: 1rem;
+        width: 70px;
+        height: 70px;
+        margin: 0 auto 1rem;
+    }
+
+    .service-content h3 {
+        font-size: 1.75rem;
+    }
+
+    .service-features {
+        grid-template-columns: 1fr;
+        text-align: left;
     }
 
     .process-grid {
         grid-template-columns: 1fr;
         gap: 3rem;
+    }
+
+    .process-step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }

@@ -98,7 +98,7 @@ const Portfolio = () => {
                             viewport={{ once: true }}
                         >
                             <div className="featured-image">
-                                <img src={featuredProject.image} alt={featuredProject.title} />
+                                <img src={featuredProject.image} alt={featuredProject.title} loading="eager" />
                             </div>
                             <div className="featured-content">
                                 <div className="featured-badge">{featuredProject.category}</div>
