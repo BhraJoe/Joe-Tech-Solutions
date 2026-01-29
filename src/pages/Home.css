@@ -443,15 +443,7 @@
     }
 }
 
-@media (max-width: 480px) {
-    .hero-visual {
-        transform: scale(0.65);
-        /* Further scale down for small phones */
-        height: 350px;
-        margin-top: -4rem;
-        margin-bottom: -2rem;
-    }
-}
+
 
 @media (max-width: 768px) {
     .hero-section {
@@ -490,5 +482,19 @@
 
     .cta-box h2 {
         font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-visual {
+        display: flex !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: scale(0.6);
+        /* Slightly smaller to be safe */
+        height: 320px;
+        margin-top: -3rem;
+        margin-bottom: -2rem;
+        transform-origin: center center;
     }
 }
