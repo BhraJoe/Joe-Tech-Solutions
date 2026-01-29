@@ -151,6 +151,15 @@
 }
 
 @media (max-width: 900px) {
+    .about-hero-section h1 {
+        color: #fff;
+    }
+
+    .about-hero-section h1 .text-gradient {
+        -webkit-text-fill-color: #fff;
+        background: none;
+    }
+
     .about-grid {
         grid-template-columns: 1fr;
         gap: 3rem;

@@ -271,6 +271,15 @@
 }
 
 @media (max-width: 900px) {
+    .portfolio-hero-section h1 {
+        color: #fff;
+    }
+
+    .portfolio-hero-section h1 .text-gradient {
+        -webkit-text-fill-color: #fff;
+        background: none;
+    }
+
     .featured-card {
         grid-template-columns: 1fr;
         padding: 2rem;

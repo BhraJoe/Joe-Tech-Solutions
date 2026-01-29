@@ -198,6 +198,15 @@
 }
 
 @media (max-width: 900px) {
+    .contact-hero-section h1 {
+        color: #fff;
+    }
+
+    .contact-hero-section h1 .text-gradient {
+        -webkit-text-fill-color: #fff;
+        background: none;
+    }
+
     .contact-container {
         grid-template-columns: 1fr;
         gap: 3rem;
