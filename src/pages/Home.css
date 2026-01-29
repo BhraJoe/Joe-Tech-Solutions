@@ -392,33 +392,42 @@
     .hero-visual {
         order: 2;
         /* Visual second */
-        height: 300px;
-        /* Reduced height */
+        height: 400px;
+        /* Restore height for 3D space */
+        width: 100%;
         display: flex;
-        transform: none;
-        /* Remove perspective */
+        justify-content: center;
+        perspective: 1000px;
+        /* Enforce perspective */
+        transform: scale(0.85);
+        /* Scale down to fit tablet/mobile */
         margin-top: -2rem;
     }
 
     .floating-card.card-1 {
-        position: relative;
-        width: 90%;
-        max-width: 350px;
-        transform: none;
-        animation: none;
-        /* No float on mobile for stability */
-        margin: 0 auto;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        /* Keep original 3D properties from desktop, just scaled via parent */
+        position: absolute;
+        width: 420px;
+        transform: rotateY(-10deg) rotateX(5deg);
+        animation: float-1 6s ease-in-out infinite;
     }
 
     .floating-card.card-2 {
-        display: none;
-        /* Hide secondary card to reduce clutter */
+        display: block;
+        /* Show secondary card */
+        width: 380px;
+        right: auto;
+        left: 50%;
+        margin-left: 20px;
+        /* Adjust for centering shift */
+        bottom: 40px;
+        transform: rotateY(-10deg) rotateX(5deg) translateZ(-50px);
+        animation: float-2 8s ease-in-out infinite;
     }
 
     .visual-glow {
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
     }
 
     .hero-subtitle {
@@ -431,6 +440,16 @@
 
     .hero-stats {
         justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-visual {
+        transform: scale(0.65);
+        /* Further scale down for small phones */
+        height: 350px;
+        margin-top: -4rem;
+        margin-bottom: -2rem;
     }
 }
 
