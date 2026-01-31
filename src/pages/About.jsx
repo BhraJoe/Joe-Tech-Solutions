@@ -33,13 +33,13 @@ const About = () => {
 
                         <div className="about-bio-text">
                             <p>
-                                I'm Joe, a passionate Software Engineer based in Ghana with a global mindset.
-                                I founded JoeTech Solutions with a singular mission: to bridge the gap between complex technology
-                                and real-world business needs.
+                                We are JoeTech Solutions, a passionate team of Software Engineers based in Ghana with a global mindset.
+                                We founded this company with a singular mission: to bridge the gap between complex technology
+                                and real-world business outcomes, creating digital products that are not only functional but exceptional.
                             </p>
                             <p>
-                                With a background in full-stack development, I don't just write code; I architect solutions.
-                                Whether it's a high-performance marketing site or a complex web application, I bring
+                                With a background in full-stack development, we don't just write code; we architect solutions.
+                                Whether it's a high-performance marketing site or a complex web application, we bring
                                 engineering rigor and creative flair to every project.
                             </p>
                         </div>
@@ -67,7 +67,7 @@ const About = () => {
                 <div className="container">
                     <div className="section-header">
                         <h2>Technical Arsenal</h2>
-                        <p>The tools I use to bring ideas to life.</p>
+                        <p>The tools we use to bring ideas to life.</p>
                     </div>
                     <div className="skills-grid">
                         {skills.map((skillGroup, index) => (
@@ -94,8 +94,8 @@ const About = () => {
             <section className="cta-section">
                 <div className="container">
                     <div className="cta-box">
-                        <h2>Check out my work</h2>
-                        <p>See how I've helped others succeed.</p>
+                        <h2>Check out our work</h2>
+                        <p>See how we've helped others succeed.</p>
                         <Link to="/portfolio" className="btn-primary">
                             View Portfolio
                         </Link>

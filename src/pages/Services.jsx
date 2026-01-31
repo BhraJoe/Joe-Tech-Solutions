@@ -49,7 +49,7 @@ const Services = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h1>My <span className="text-gradient">Services</span></h1>
+                        <h1>Our <span className="text-gradient">Services</span></h1>
                         <p className="hero-tagline">Comprehensive Technical Solutions</p>
                         <p className="hero-description">
                             Engineering forward-thinking digital experiences that drive business growth.

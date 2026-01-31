@@ -49,7 +49,7 @@ const Home = () => {
                             Building <span className="text-gradient">Digital Excellence</span> for Modern Businesses.
                         </motion.h1>
                         <motion.p className="hero-subtitle" variants={itemVariants}>
-                            I am Joe. A Software Engineer and Creative Technologist. I build premium web applications and digital solutions that scale.
+                            We are JoeTech Solutions. A team of Software Engineers and Creative Technologists. We build premium web applications and digital solutions that scale.
                         </motion.p>
                         <motion.div className="hero-cta" variants={itemVariants}>
                             <Link to="/contact" className="btn-primary btn-lg">
@@ -101,7 +101,7 @@ const Home = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                         >
-                            My Expertise
+                            Our Expertise
                         </motion.h2>
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}

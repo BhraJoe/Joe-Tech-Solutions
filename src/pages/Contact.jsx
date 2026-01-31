@@ -43,7 +43,7 @@ const Contact = () => {
                         <h1>Let's <span className="text-gradient">Talk</span></h1>
                         <p className="hero-tagline">Start Your Transformation</p>
                         <p className="hero-description">
-                            Ready to build something extraordinary? I'm currently accepting new projects.
+                            Ready to build something extraordinary? We're currently accepting new projects.
                         </p>
                     </motion.div>
                 </div>
@@ -64,8 +64,8 @@ const Contact = () => {
 
                         <h2>Contact Information</h2>
                         <p className="contact-intro">
-                            Fill out the form or contact me directly via the channels below.
-                            I'm open for freelance projects and consulting.
+                            Fill out the form or contact us directly via the channels below.
+                            We're open for freelance projects and consulting.
                         </p>
 
                         <div className="contact-details">
@@ -142,7 +142,7 @@ const Contact = () => {
                                     id="message"
                                     name="message"
                                     rows="5"
-                                    placeholder="Tell me about your project..."
+                                    placeholder="Tell us about your project..."
                                     value={formState.message}
                                     onChange={handleChange}
                                     required

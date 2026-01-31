@@ -82,7 +82,7 @@ const Portfolio = () => {
                         <h1>Selected <span className="text-gradient">Works</span></h1>
                         <p className="hero-tagline">Innovation in every pixel</p>
                         <p className="hero-description">
-                            A curated selection of projects that demonstrate my ability to solve complex problems with elegant code.
+                            A curated selection of projects that demonstrate our ability to solve complex problems with elegant code.
                         </p>
                     </motion.div>
                 </div>
