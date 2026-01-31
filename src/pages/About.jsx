@@ -28,7 +28,7 @@ const About = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h1>About <span className="text-gradient">Joe</span></h1>
+                        <h1>About <span className="text-gradient">Us</span></h1>
                         <p className="hero-tagline">Software Engineer. Creative Problem Solver. Tech Strategist.</p>
 
                         <div className="about-bio-text">
@@ -57,7 +57,7 @@ const About = () => {
                         </div>
 
                         <div className="signature">
-                            <p>- Joe</p>
+                            <p>- The JoeTech Team</p>
                         </div>
                     </motion.div>
                 </div>
